@@ -1,0 +1,35 @@
+.line-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 94px;
+    margin-bottom: 50px;
+} 
+
+.button.primary.secondary{
+    display: inline-block;
+    padding: 6px 22px;
+
+    border-radius: 4px;
+    background-color: #f5f4fa;
+    color: var(--title-texst-color);
+
+    border: transparent;
+    text-align: center;
+    margin-left: 8px;
+    border: none;
+    border-radius: 4px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    cursor: pointer;
+    transition: var(--timing-function);
+}
+
+.button.primary:hover,
+.button.primary:focus{
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}

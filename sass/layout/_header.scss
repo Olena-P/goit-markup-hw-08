@@ -1,0 +1,126 @@
+.container{
+    // padding-left: 15px;
+    // padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    border: none;
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
+}
+
+.site-nav{
+    display: flex;
+    align-items: center;
+
+    & .item{
+        outline: 1px solid transparent;
+    }
+    
+    & .item + .item{
+        margin-left: 50px;
+    }
+}
+
+.site-nav-list{
+    display: flex;
+    margin-left: 93px;
+}
+
+.site-nav-list-address{
+    display: flex;
+    margin-left: auto;
+}
+
+.header{
+    border-bottom: 1px solid #ECECEC;
+    background-color: var(--primary-white-color);
+
+    & .line{
+        height: 0px;
+        left: 0px;
+        top: 80px;
+        border: 1px solid #ECECEC;
+    }
+}
+
+
+
+.site-nav-link{
+    display: block;
+    color: var(--title-texst-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    &:hover,
+    &:focus{
+        color: var(--accent-color);
+    }
+    
+    &.mail{
+        display: flex;
+        align-items: center;
+        font-style: normal;
+        color: var(--primary-texst-color);
+       
+    }
+    
+    &.mail:hover,
+    &.mail:focus{
+        color: var(--accent-color);
+    }
+    
+    &.number{
+        display: flex;
+        align-items: center;
+        font-style: normal;
+        color: var(--primary-text-color);
+        fill: var(--title-texst-color);
+    }
+    
+    &.number:hover,
+    &.number:focus{
+        color: var(--accent-color);
+    }
+}
+
+.mail-svg{
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.number-svg{
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.current::after{
+    content:'';
+    transform: translateY(33px);
+    
+    left: 0;
+    bottom: 0px;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+}
+
+.current{
+    color: var(--accent-color);
+}
