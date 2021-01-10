@@ -1,9 +1,9 @@
 .container{
-    // padding-left: 15px;
-    // padding-right: 15px;
-    //margin-left: auto;
-    //margin-right: auto;
-    //width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    
     border: none;
 
     @media screen and (min-width: 480px) {
@@ -169,4 +169,4 @@
         background-color: #fff;
         width: 70%;
     }
-}
+} 
