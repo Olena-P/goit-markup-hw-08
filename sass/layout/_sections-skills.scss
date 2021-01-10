@@ -1,7 +1,7 @@
 /* ---------------icons------------------- */
 .section-skills__background {
     padding: 25px 100px;
-    margin-bottom: 30px;
+    //margin-bottom: 30px;
     background-color: #F5F4FA;
 }
 
@@ -13,12 +13,12 @@
     font-size: 14px;
     line-height: 16px;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    //margin-bottom: 10px;
 }
 
 .feature-list{
-    display: flex;
-    flex-wrap: wrap;
+    //display: flex;
+    //flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -35,11 +35,11 @@
 }
 
 .item:nth-child(n+2){
-    margin-left: 30px;
+    //margin-left: 30px;
 }
 
 .container .feature-item .item + .item{
-    margin-left: 30;
+    //margin-left: 30;
 }
 
 .section-skills{

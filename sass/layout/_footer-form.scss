@@ -1,9 +1,9 @@
 .footer-box{
-    margin-left: auto;
+    //margin-left: auto;
 }
 
 .footer-form{
-    margin-left: 93px;
+    //margin-left: 93px;
 
     & input::placeholder {
         font-weight: 400;
@@ -20,13 +20,13 @@
     font-style: normal;
     font-weight: bold;
     color: var(--primary-white-color);
-    margin-bottom: 20px;
+    //margin-bottom: 20px;
   }
 
 .e-mail {
     line-height: 1.25;
     letter-spacing: 0.03em;
-    width: 358px;
+    //width: 358px;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 16px;
@@ -37,7 +37,7 @@
 }
   
 .footer-form-button {
-    display: inline-flex;
+    //display: inline-flex;
     align-items: center;
     font-weight: bold;
     font-size: 16px;
@@ -53,6 +53,6 @@
 }
 
 .footer-form-icon {
-    margin-left: 10px;
+    //margin-left: 10px;
 }
   
