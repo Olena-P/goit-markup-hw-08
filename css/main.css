@@ -254,6 +254,7 @@ img {
   font-style: normal;
   font-weight: bold;
   color: var(--primary-white-color);
+  margin-bottom: 20px;
 }
 
 .e-mail {
@@ -284,6 +285,12 @@ img {
   padding: 10px 28px;
 }
 
+@media screen and (max-width: 767px) {
+  .footer-form-button {
+    margin-top: 20px;
+  }
+}
+
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -304,6 +311,15 @@ html {
 .footer.logo {
   font-family: Raleway;
   font-style: normal;
+}
+
+.footer-list-address {
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.footer-address {
+  margin-top: 9px;
 }
 
 .footer-list-link {
@@ -329,6 +345,7 @@ html {
 }
 
 .join {
+  margin-bottom: 20px;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -361,7 +378,23 @@ html {
   height: 20px;
 }
 
+@media screen and (max-width: 767px) {
+  .address-box {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .address-box {
+    flex-direction: column-reverse;
+    margin-left: 80px;
+  }
+}
+
+s
 .svg-list-link {
+  width: 44px;
   height: 44px;
 }
 
@@ -370,6 +403,7 @@ html {
   justify-content: center;
   display: inline-flex;
   padding: 12px;
+  margin-right: 10px;
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -488,6 +522,9 @@ html {
 
 /* ---------------icons------------------- */
 .section-skills__background {
+  display: flex;
+  justify-content: center;
+  padding: 25px 100px;
   background-color: #F5F4FA;
 }
 
@@ -498,10 +535,30 @@ html {
   font-size: 14px;
   line-height: 16px;
   text-transform: uppercase;
+  text-align: center;
+  padding-top: 30px;
 }
 
 .feature-list {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.text {
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .text {
+    height: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .text {
+    height: 75px;
+  }
 }
 
 .feature-list .text {
@@ -511,7 +568,15 @@ html {
   color: var(--primary-texst-color);
 }
 
+@media screen and (max-width: 767px) {
+  .item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 .section-skills {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--primary-white-color);
 }
 
