@@ -1,8 +1,16 @@
 .line-button{
-    //display: flex;
-    justify-content: center;
-    //margin-top: 94px;
-    //margin-bottom: 50px;
+    display: flex;
+    justify-content: start;
+
+    margin-top: 60px;
+    margin-bottom: 40px;
+
+    flex-wrap: wrap;
+    
+    @media screen and (min-width: 1200px) {
+        margin-top: 94px;
+        margin-bottom: 50px;
+    }
 } 
 
 .button.primary.secondary{
@@ -15,7 +23,6 @@
 
     border: transparent;
     text-align: center;
-    //margin-left: 8px;
     border: none;
     border-radius: 4px;
     

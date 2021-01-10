@@ -594,6 +594,20 @@ s
   background-color: #F5F4FA;
 }
 
+@media screen and (min-width: 768px) {
+  .section-team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .section-team-title {
   font-weight: bold;
   font-size: 36px;
@@ -629,6 +643,12 @@ s
   background-color: var(--primary-white-color);
   text-align: center;
   align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list .team-list-link + .team-list-link {
+    margin-left: 30px;
+  }
 }
 
 .team-list-link {
@@ -676,6 +696,13 @@ s
   line-height: 1.875;
   letter-spacing: 0.03em;
   color: var(--primary-texst-color);
+  margin-top: 4px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .portfolio-info {
@@ -691,16 +718,30 @@ img {
 }
 
 .flex-element {
+  width: 450px;
+  height: 404px;
+  margin-bottom: 30px;
   border: 1px solid #eeeeee;
 }
 
+.flex-element:nth-child(3n) {
+  margin-right: 0px;
+}
+
 .portfolio-list {
+  display: flex;
+  flex-direction: column;
   background: #FFFFFF;
   box-sizing: border-box;
+  margin-top: 30px;
 }
 
 .portfolio-list:hover, .portfolio-list:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-list:nth-child(-n + 3) {
+  margin-top: 0;
 }
 
 .portfolio-list:hover .position-portfolio,
@@ -709,13 +750,16 @@ img {
   transform: translateY(0);
 }
 
+.flex-container:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+
 .portfolio-card {
   position: relative;
   overflow: hidden;
 }
 
 .position-portfolio {
-  content: '';
   display: block;
   position: absolute;
   width: 100%;
@@ -735,9 +779,30 @@ img {
   transform: translateY(100%);
 }
 
+.flex-container__img {
+  width: 450px;
+  height: 294px;
+}
+
+.line-button__list {
+  padding-left: 8px;
+  padding-top: 15px;
+}
+
 /*=================  END PORTFOLIO============= */
 .line-button {
-  justify-content: center;
+  display: flex;
+  justify-content: start;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 1200px) {
+  .line-button {
+    margin-top: 94px;
+    margin-bottom: 50px;
+  }
 }
 
 .button.primary.secondary {

@@ -13,13 +13,13 @@
     line-height: 1.875;
     letter-spacing: 0.03em;
     color: var(--primary-texst-color);
-    //margin-top: 4px;
+    margin-top: 4px;
 }
 
 .flex-container{
-    //display: flex;
-    //flex-wrap: wrap;
-    //justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .portfolio-info{
@@ -35,22 +35,23 @@ img{
 }
 
 .flex-element{
-    //width: 370px;
-    //margin-bottom: 30px;
+    width: 450px;
+    height: 404px;
+    margin-bottom: 30px;
     border: 1px solid #eeeeee;
 }
 
 .flex-element:nth-child(3n){
-    //margin-right: 0px;
+    margin-right: 0px;
 }
 
 .portfolio-list{
-    //display: flex;
-    //flex-direction: column;
+    display: flex;
+    flex-direction: column;
 
     background: #FFFFFF; 
     box-sizing: border-box;
-    //margin-top: 30px;
+    margin-top: 30px;
 
     &:hover,
     &:focus{
@@ -63,7 +64,7 @@ img{
     
     
     &:nth-child(-n + 3){
-        //margin-top: 0;
+        margin-top: 0;
     }
 
     &:hover .position-portfolio,
@@ -74,9 +75,9 @@ img{
     }
 }
 
-//.flex-container:nth-last-child(-n + 3){
-    //margin-bottom: 0px;
-//}
+.flex-container:nth-last-child(-n + 3){
+    margin-bottom: 0px;
+}
 
 .portfolio-card{
     position: relative;
@@ -84,7 +85,6 @@ img{
 }
 
 .position-portfolio{
-    content: '';
     display: block;
     position: absolute;
     width: 100%;
@@ -94,10 +94,10 @@ img{
     align-items: center;
     opacity: 0;
 
-    //padding-left: 23px;
-    //padding-right: 23px;
-    //padding-top: 63px;
-    //padding-bottom: 63px;
+    // padding-left: 23px;
+    // padding-right: 23px;
+    // padding-top: 63px;
+    // padding-bottom: 63px;
     
 
     font-style: normal;
@@ -112,4 +112,14 @@ img{
     transform: translateY(100%);
 }
 
+
+.flex-container__img{
+    width: 450px;
+    height: 294px;
+}
+
+.line-button__list{
+    padding-left: 8px;
+    padding-top: 15px;
+}
 /*=================  END PORTFOLIO============= */
