@@ -1,9 +1,18 @@
 .hero-title{
     color: var(--primary-white-color);
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
     text-transform: uppercase;
+
+    padding-top: 118px;
+    padding-bottom: 30px;
+
+    font-size: 24px;
+    line-height: 1.61;
+
+    @media screen and (min-width: 1200px){
+        font-size: 44px;
+        line-height: 1.36;
+    }
 }
 
 .hero{
@@ -19,8 +28,11 @@
     background-size: cover;
 
     border: 1px solid transparent;
-    //min-height: 600px;
-    //padding-top: 200px;
+
+    min-height: 400px;
+
+    // min-height: 600px;
+    // padding-top: 200px;
 }
 
 .container.hero-box{
@@ -30,6 +42,8 @@
 .button-one{
     display: inline-block;
     padding: 10px 32px;
+
+    margin-bottom: 118px;
     
     border-radius: 4px;
     text-align: center;
