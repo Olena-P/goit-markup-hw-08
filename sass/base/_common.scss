@@ -35,3 +35,9 @@ a {
     text-decoration: none; /* Убираем подчеркивание у ссылок */
     transition: var(--timing-function);
 }
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
