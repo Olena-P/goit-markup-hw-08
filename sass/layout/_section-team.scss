@@ -1,7 +1,7 @@
 .section-team{
     background-color: #F5F4FA;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    //padding-top: 94px;
+    //padding-bottom: 94px;
 }
 
 .section-team-title{
@@ -16,7 +16,7 @@
     //display: flex;
     //flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 50px;
+    //padding-top: 50px;
 }
 
 .team-title-name{
@@ -39,7 +39,7 @@
 .team-title-info{
     background-color: var(--primary-white-color);
     text-align: center;
-    min-width: 108px;
+    //min-width: 108px;
     align-items: center;
 }
 
@@ -56,9 +56,8 @@
 }
 
 .team-icon{
-    align-items: center;
-    //justify-content: center;
-    //display: inline-flex;
+    justify-content: center;
+    display: flex;
     padding-bottom: 30px;
 
     &.team{

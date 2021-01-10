@@ -1,3 +1,10 @@
+.section-images{
+    @media screen and (max-width: 767px) {
+        display: none;   
+    }
+}
+
+
 .section-images-title{
     font-weight: bold;
     font-size: 36px;
@@ -18,7 +25,7 @@
 }
 
 .section-images{
-    padding-bottom: 94px;
+    //padding-bottom: 94px;
 }
 
 .section-images-link{
@@ -29,15 +36,15 @@
     display: block;
     position: absolute;
     width: 100%;
-    height: 70px;
+    //height: 70px;
     left: 0px;
     bottom: 0px;
 
     align-items: center;
     text-transform: uppercase;
     position: absolute;
-    padding-top: 27px;
-    padding-bottom: 27px;
+    //padding-top: 27px;
+    //padding-bottom: 27px;
 
     font-style: normal;
     font-weight: bold;
