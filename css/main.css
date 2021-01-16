@@ -448,54 +448,6 @@ img {
   margin-left: 10px;
 }
 
-@media screen and (min-width: 768px) {
-  .address-icon {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .address-icon__contacts {
-    margin-left: 76px;
-    margin-right: 165px;
-  }
-  .e-mail {
-    display: block;
-    margin-bottom: 20px;
-  }
-  .footer-box {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .address-box {
-    margin-top: 60px;
-    margin-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .address-icon {
-    display: flex;
-  }
-  .footer-box {
-    margin-left: auto;
-    margin-right: 0;
-  }
-  .footer-form-paragraph {
-    text-align: start;
-  }
-  .address-box {
-    flex-direction: column-reverse;
-    margin-left: 70px;
-  }
-  .address-icon__contacts {
-    text-align: start;
-    margin: 0;
-  }
-  .e-mail {
-    width: 358px;
-    display: inline-flex;
-  }
-}
-
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -567,10 +519,6 @@ html {
   color: #757575;
 }
 
-.address-box {
-  margin-top: 60px;
-}
-
 .address-icon {
   align-items: baseline;
   justify-content: flex-start;
@@ -607,6 +555,50 @@ html {
 .svg-list-item:hover, .svg-list-item:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .address-icon {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .address-icon__contacts {
+    margin-left: 76px;
+    margin-right: 165px;
+  }
+  .e-mail {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .footer-box {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .address-icon {
+    display: flex;
+  }
+  .footer-box {
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .footer-form-paragraph {
+    text-align: start;
+  }
+  .address-box {
+    flex-direction: column-reverse;
+    margin-left: 70px;
+  }
+  .address-icon__contacts {
+    text-align: start;
+    margin: 0;
+  }
+  .e-mail {
+    width: 358px;
+    display: inline-flex;
+  }
 }
 
 .customers {
@@ -690,6 +682,24 @@ html {
   }
   .customers-list-link {
     width: 170px;
+  }
+}
+
+.section-team__img {
+  object-fit: cover;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section-team__img {
+    width: 354px;
+    height: 374px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-team__img {
+    width: 270px;
+    height: 260px;
   }
 }
 
