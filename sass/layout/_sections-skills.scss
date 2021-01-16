@@ -1,10 +1,13 @@
 /* ---------------icons------------------- */
 .section-skills__background {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding: 25px 100px;
     //margin-bottom: 30px;
     background-color: #F5F4FA;
+
+    
 }
 
 /* ---------------icons end------------------- */
@@ -46,22 +49,34 @@
 }
 
 
-    @media screen and (max-width: 767px){
-        .item:not(:last-child) {
-            margin-bottom: 30px;
-        }
+@media screen and (max-width: 767px){
+    .item:not(:last-child) {
+        margin-bottom: 30px;
     }
+}
     
+@media screen and (min-width: 768px){
+    .item{
+        width: 354px;
+    }
 
-
-.item:nth-child(n+2){
-    //margin-left: 30px;
+    .item:nth-child(-n+2){
+        margin-bottom: 30px;
+    }
 }
 
+@media screen and (min-width: 1200px){
+    .item{
+        width: 270px;
+    }
+    
+    .item:nth-child(n+2){
+        margin-left: 30px;
+    }
 
-
-.container .feature-item .item + .item{
-    //margin-left: 30;
+    .container .feature-item .item + .item{
+        margin-left: 30;
+    }
 }
 
 .section-skills{

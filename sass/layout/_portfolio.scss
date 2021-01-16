@@ -1,4 +1,7 @@
 /*================= PORTFOLIO============= */
+
+
+
 .force-name{
     font-weight: 700;
     font-size: 18px;
@@ -118,8 +121,50 @@ img{
     height: 294px;
 }
 
-.line-button__list{
-    padding-left: 8px;
-    padding-top: 15px;
+.line-button{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+    margin-top: 60px;
 }
+
+.line-button__portfolio{  
+ margin-right: 8px;
+ margin-bottom: 15px;
+}
+
+.line-button__portfoli:nth-last-child(-n + 2)  {
+    margin-bottom: 0px;
+} 
+
+@media screen and (min-width: 768px){
+    .flex-element{
+        width: 354px;
+        height: 440px;
+        margin-bottom: 30px;
+    }
+    .line-button{
+        justify-content: center
+    }
+
+    }
+    
+    @media screen and (min-width: 1200px){
+        .container {
+            margin-left: auto;
+            margin-right: auto;
+            width: 1200px;
+            border: none;
+        }
+        
+        .line-button__list{
+            display: flex;
+            justify-content: center;
+            margin-top: 94px;
+            margin-bottom: 50px;
+        }
+    }
+
+
 /*=================  END PORTFOLIO============= */

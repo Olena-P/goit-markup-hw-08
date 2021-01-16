@@ -14,26 +14,35 @@
         <header class="header line">
             <div class="container">
                 <nav class="site-nav">
-                    <a href="./index.html" class="logo" aria-label="логотип сайта" lang="en"><span class="logo-accent">Web</span>Studio</a>
-                    <button class="menu-button is-open" aria-expanded="true" aria-controls="menu-container" data-menu-button>...</button>
-                    <div class="menu-container is-open" id="menu-container" data-menu>
+                    <a href="./index.html" class="heder__logo logo" aria-label="логотип сайта" lang="en"><span class="logo-accent">Web</span>Studio</a>
+                    <button type="button"
+                     class="menu-button "
+                     aria-expanded="false"
+                     aria-controls="menu-container"
+                    data-menu-button>
+                    <svg width="40" height="40" aria-label="переключатель мобильного меню">
+                        <use class="icon-cross"   href="./images/sprite.svg#icon-close_40px"></use>
+                        <use class="icon-menu"  href="./images/sprite.svg#icon-menu_40px"></use>
+                    </svg>
+                    </button>
+                    <div class="menu-container " id="menu-container" data-menu>
                         <div class="navigation">
                             <ul class="site-nav-list">
-                                <li class="item"><a href="./index.html" class="site-nav-link current">Студия</a></li>
-                                <li class="item"><a href="./portfolio.html" class="site-nav-link">Портфолио</a></li>
-                                <li class="item"><a href="" class="site-nav-link">Контакты</a></li>
+                                <li class="navigation__item"><a href="./index.html" class="site-nav-link current">Студия</a></li>
+                                <li class="navigation__item"><a href="./portfolio.html" class="site-nav-link">Портфолио</a></li>
+                                <li class="navigation__item"><a href="" class="site-nav-link">Контакты</a></li>
                             </ul>
                         </div>
                         <div class="contacts">
                             <ul class="site-nav-list-address">
-                                <li class="item">
+                                <li class="contacts__item">
                                     <a href="info@devstudio.com" class="site-nav-link mail">
                                         <svg class="mail-svg" width="16px" height="12px">
                                             <use href="./images/sprite.svg#icon-envelope-hover"></use>
                                         </svg>
                                     info@devstudio.com </a>
                                 </li>
-                                <li class="item">
+                                <li class="contacts__item">
                                     <a href="mailto:tel:+380961111111" class="site-nav-link number">
                                         <svg class="number-svg" width="10px" height="16px">
                                             <use href="./images/sprite.svg#icon-smartphone"></use>
@@ -112,26 +121,50 @@
                     <h2 class="section-images-title">Чем мы занимаемся</h2>
                     <ul class="activity-list">
                         <li class="section-images-link">
-                            <img 
-                            src="images/img.1.jpg" 
-                            alt="Десктопные приложения"
-                            width="370"
-                            height="294">
+                            <picture>
+                                <source
+                                    srcset="./images/img.1-1x.webp 1x, ./images/img.1-2x.webp"
+                                     media="(min-width: 1200px)" type="image/webp">
+                                <source 
+                                    srcset="./images/img.1-1x.jpg 1x, ./images/img.1-2x.jpg"
+                                     media="(min-width: 1200px)"> 
+                                <img 
+                                     src="./images/img.1.jpg" 
+                                     alt="Десктопные приложения">
+                                    
+                            </picture>
+                            
                             <p class="position">Десктопные приложения</p>
                         </li>
                         <li class="section-images-link">
-                            <img 
-                            src="images/img.2.jpg" 
-                            alt="Мобильные приложения"
-                            width="370"
-                            height="294">
+                            <picture>
+                                <source
+                                    srcset="./images/img.2-1x.webp 1x, ./images/img.2-2x.webp"
+                                     media="(min-width: 1200px)" type="image/webp">
+                                <source 
+                                    srcset="./images/img.2-1x.jpg 1x, ./images/img.2-2x.jpg"
+                                     media="(min-width: 1200px)">
+                                <img 
+                                     src="./images/img.2.jpg" 
+                                     alt="Мобильные приложения">
+                                    
+                            </picture>
+                            
                             <p class="position">Мобильные приложения</p>
                         </li>
                         <li class="section-images-link">
-                            <img 
-                            src="images/img.3.jpg"alt="Дизайнерские решения"
-                            width="370"
-                            height="294">
+                            <picture>
+                                <source
+                                srcset="./images/img.3-1x.webp 1x, ./images/img.3-2x.webp"
+                                 media="(min-width: 1200px)" type="image/webp">
+                            <source 
+                                srcset="./images/img.3-1x.jpg 1x, ./images/img.3-2x.jpg"
+                                 media="(min-width: 1200px)">
+                                <img 
+                                     src="./images/img.3.jpg"alt="Дизайнерские решения">
+                                    
+                            </picture>
+                            
                             <p class="position">Дизайнерские решения</p>
                         </li>
                     </ul>  
@@ -142,7 +175,30 @@
                     <h2 class="section-team-title">Наша команда</h2>
                     <ul class="team-list"> 
                         <li class="team-list-link">
-                            <img class="section-team__img" src="images/img1.jpg" alt="Игорь Демьяненко">
+                            <picture>
+                                <source 
+                                    srcset="./images/img1-1х.webp 1x, ./images/img1-1х.webp 2x"
+                                     media="(min-width: 480px)" type="image/webp">
+                                <source 
+                                    srcset="./images/img1-1х.jpg 1x, ./images/img1-2х.jpg 2x"
+                                     media="(min-width: 480px)">
+                                <source 
+                                    srcset="./images/img1-tablet-1х.webp 1x, ./images/img1-tablet-2х.webp 2x"
+                                     media="(min-width: 768px)" type="image/webp">
+                               <source 
+                                     srcset="./images/img1-tablet-1х.jpg, ./images/img1-tablet-1х.jpg 2x"
+                                      media="(min-width: 768px)">     
+                                <source 
+                                    srcset="./images/img1-desk-1x.webp 1x, ./images/img1-desk-1x.webp 2x"
+                                     media="(min-width: 1200px)" type="image/webp">
+                                <source 
+                                    srcset="./images/img1-desk-1x.jpg , ./images/img1-desk-1x.jpg 2x"
+                                     media="(min-width: 1200px)">
+                                <img class="section-team__img" 
+                                     src="./images/img1.jpg" 
+                                     alt="Игорь Демьяненко">
+                            </picture>
+                            
                             <div class="team-title-info" >
                                 <h3 class="team-title-name">Игорь Демьяненко</h3>
                                 <p class="team-title-skills">
@@ -181,7 +237,29 @@
                             </div>
                         </li>
                         <li class="team-list-link">
-                            <img class="section-team__img" src="images/img2.jpg" alt="Ольга Репина">
+                            <picture>
+                                <source 
+                                    srcset="./images/img2-1х.webp 1x, ./images/img2-1х.webp 2x"
+                                     media="(min-width: 480px)" type="image/webp">
+                                <source 
+                                    srcset="./images/img2-1х.jpg 1x, ./images/img2-2х.jpg 2x"
+                                     media="(min-width: 480px)">
+                                <source 
+                                    srcset="./images/img2-tablet-1х.webp 1x, ./images/img2-tablet-2х.webp 2x"
+                                     media="(min-width: 768px)" type="image/webp">
+                               <source 
+                                     srcset="./images/img2-tablet-1х.jpg, ./images/img2-tablet-1х.jpg 2x"
+                                      media="(min-width: 768px)">     
+                                <source 
+                                    srcset="./images/img2-desk-1x.webp 1x, ./images/img2-desk-1x.webp 2x"
+                                     media="(min-width: 1200px)" type="image/webp">
+                                <source 
+                                    srcset="./images/img1-desk-1x.jpg , ./images/img1-desk-1x.jpg 2x"
+                                     media="(min-width: 1200px)">
+                                <img class="section-team__img" 
+                                     src="./images/img2.jpg" 
+                                     alt="Игорь Демьяненко">
+                            </picture>
                             <div class="team-title-info" >
                                 <h3 class="team-title-name">Ольга Репина</h3>
                                 <p class="team-title-skills">
@@ -220,9 +298,29 @@
                             </div>
                         </li>
                         <li class="team-list-link">
-                            <img class="section-team__img" src="images/img3.jpg" alt="Николай Тарасов"
-                            width="450"
-                            height="460">
+                            <picture>
+                                <source 
+                                    srcset="./images/img3-1х.webp 1x, ./images/img3-1х.webp 2x"
+                                     media="(min-width: 480px)" type="image/webp">
+                                <source 
+                                    srcset="./images/img3-1х.jpg 1x, ./images/img3-2х.jpg 2x"
+                                     media="(min-width: 480px)">
+                                <source 
+                                    srcset="./images/img3-tablet-1х.webp 1x, ./images/img3-tablet-2х.webp 2x"
+                                     media="(min-width: 768px)" type="image/webp">
+                               <source 
+                                     srcset="./images/img3-tablet-1х.jpg, ./images/img3-tablet-1х.jpg 2x"
+                                      media="(min-width: 768px)">     
+                                <source 
+                                    srcset="./images/img3-desk-1x.webp 1x, ./images/img3-desk-1x.webp 2x"
+                                     media="(min-width: 1200px)" type="image/webp">
+                                <source 
+                                    srcset="./images/img3-desk-1x.jpg , ./images/img3-desk-1x.jpg 2x"
+                                     media="(min-width: 1200px)">
+                                <img class="section-team__img" 
+                                     src="./images/img3.jpg" 
+                                     alt="Игорь Демьяненко">
+                            </picture>
                             <div class="team-title-info" >
                                 <h3 class="team-title-name">Николай Тарасов</h3>
                                 <p class="team-title-skills">
@@ -260,10 +358,30 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="team-list-link">
-                            <img class="section-team__img" src="images/img4.jpg" alt="Михаил Ермаков"
-                            width="450"
-                            height="460">
+                        <li  class="team-list-link">
+                            <picture>
+                                <source 
+                                    srcset="./images/img4-1х.webp 1x, ./images/img4-1х.webp 2x"
+                                     media="(min-width: 480px)" type="image/webp">
+                                <source 
+                                    srcset="./images/img4-1х.jpg 1x, ./images/img4-2х.jpg 2x"
+                                     media="(min-width: 480px)">
+                                <source 
+                                    srcset="./images/img4-tablet-1х.webp 1x, ./images/img4-tablet-2х.webp 2x"
+                                     media="(min-width: 768px)" type="image/webp">
+                               <source 
+                                     srcset="./images/img4-tablet-1х.jpg, ./images/img4-tablet-1х.jpg 2x"
+                                      media="(min-width: 768px)">     
+                                <source 
+                                    srcset="./images/img4-desk-1x.webp 1x, ./images/img4-desk-1x.webp 2x"
+                                     media="(min-width: 1200px)" type="image/webp">
+                                <source 
+                                    srcset="./images/img4-desk-1x.jpg , ./images/img4-desk-1x.jpg 2x"
+                                     media="(min-width: 1200px)">
+                                <img class="section-team__img" 
+                                     src="./images/img4.jpg" 
+                                     alt="Игорь Демьяненко">
+                            </picture>
                             <div class="team-title-info">
                                 <h3 class="team-title-name">Михаил Ермаков</h3>
                                 <p class="team-title-skills">
@@ -361,7 +479,7 @@
             <div class="container">
                 
                 <address class="address-icon">
-                    <div>
+                    <div class="address-icon__contacts">
                         <a href="./index.html" class="logo" aria-label="логотип сайта" lang="en"><span class="logo-accent">Web</span><span class="footer-logo">Studio</span></a>
                         <ul class="footer-list-address">
                             <li class="footer-address">

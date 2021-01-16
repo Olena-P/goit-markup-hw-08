@@ -1,15 +1,73 @@
 
-// @media screen and (min-width: 480px) {
-//     width: 480px;
-// }
 
-// @media screen and (min-width: 768px) {
-//     width: 768px;
-// }
 
-// @media screen and (min-width: 1200px) {
-//     width: 1200px;
-// }
+
+
+    
+
+@media screen and (min-width: 768px) {
+    // .footer{
+    //     height: 463px;
+    // }
+
+    .address-icon{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .address-icon__contacts{
+        margin-left: 76px;
+        margin-right: 165px;
+    
+    }
+
+    .e-mail{
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .footer-box{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .address-box{
+        margin-top: 60px; 
+        margin-bottom: 60px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .address-icon {
+        display: flex;
+    }
+    .footer-box{
+        margin-left: auto; 
+        margin-right: 0;     
+    }
+
+    // .footer-form{
+    //     display: inline-flex;
+    // }
+    .footer-form-paragraph{
+       text-align: start; 
+    }
+
+    .address-box{
+        flex-direction: column-reverse;
+        margin-left: 70px;
+    }
+    .address-icon__contacts{
+        text-align: start;
+       margin: 0;
+    }
+    .e-mail{
+        width: 358px;
+        display: inline-flex;
+        
+    }
+   
+}
 
 
 
@@ -24,7 +82,7 @@ html {
 
 .footer{
     background: #2F303A;
-    height: 603px;
+    
     text-align: center;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -91,9 +149,11 @@ html {
 .site-nav-link.number{
     color: #757575;
 }
+.address-box{
+    margin-top: 60px;
+}
 
 .address-icon{
-    // display: flex;
     align-items: baseline;
     justify-content: flex-start
 }
@@ -108,25 +168,12 @@ html {
     height: 20px;
     
 }
-.address-box{
-    @media screen and (max-width: 767px){
-        margin-top: 60px; 
-        margin-bottom: 60px; 
-    }
 
-
-    @media screen and (min-width: 1200px){
-         flex-direction: column-reverse;
-         margin-left: 80px;
- 
-    }
-}
-s
 
    
 
 .svg-list-link{
-    
+    margin-right: 10px;
     width: 44px;
     height: 44px;
 }
@@ -136,7 +183,7 @@ s
     justify-content: center;
     display: inline-flex;
     padding: 12px;
-    margin-right: 10px;
+    
     width: 44px;
     height: 44px;
     background-color: rgba(255, 255, 255, 0.1);
