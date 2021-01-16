@@ -459,9 +459,6 @@ html {
 
 .footer {
   background: #2F303A;
-  text-align: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .footer.logo {
@@ -557,10 +554,26 @@ html {
   background-color: var(--accent-color);
 }
 
+@media screen and (max-width: 767px) {
+  .footer {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .address-box {
+    margin-top: 60px;
+  }
+}
+
 @media screen and (min-width: 768px) {
+  .footer {
+    text-align: center;
+  }
   .address-icon {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   .address-icon__contacts {
     margin-left: 76px;
@@ -579,6 +592,8 @@ html {
 @media screen and (min-width: 1200px) {
   .address-icon {
     display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   .footer-box {
     margin-left: auto;
@@ -586,10 +601,12 @@ html {
   }
   .footer-form-paragraph {
     text-align: start;
+    margin-top: 0px;
   }
   .address-box {
     flex-direction: column-reverse;
     margin-left: 70px;
+    text-align: start;
   }
   .address-icon__contacts {
     text-align: start;

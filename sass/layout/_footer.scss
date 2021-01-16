@@ -9,10 +9,6 @@ html {
 
 .footer{
     background: #2F303A;
-    
-    text-align: center;
-    padding-top: 60px;
-    padding-bottom: 60px;
 
     &.logo{
         font-family: Raleway;
@@ -89,7 +85,7 @@ html {
     width: 20px;
     height: 20px;
     
-} 
+}
 
 .svg-list-link{
     margin-right: 10px;
@@ -116,11 +112,28 @@ html {
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px){
+    .footer{
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 
+    .address-box{
+        margin-top: 60px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer{
+        text-align: center;
+    }
+    
     .address-icon{
         display: flex;
         flex-wrap: wrap;
+        padding-top: 60px; 
+        padding-bottom: 60px;
     }
 
     .address-icon__contacts{
@@ -142,30 +155,32 @@ html {
 @media screen and (min-width: 1200px) {
     .address-icon {
         display: flex;
+        padding-top: 60px; 
+        padding-bottom: 60px;
     }
 
     .footer-box{
         margin-left: auto; 
-        margin-right: 0;     
+        margin-right: 0; 
     }
 
     .footer-form-paragraph{
        text-align: start; 
+       margin-top: 0px;
     }
 
     .address-box{
         flex-direction: column-reverse;
         margin-left: 70px;
+        text-align: start;
     }
 
     .address-icon__contacts{
         text-align: start;
        margin: 0;
     }
-
     .e-mail{
         width: 358px;
-        display: inline-flex;
-        
+        display: inline-flex;  
     }
 }
