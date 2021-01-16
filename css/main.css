@@ -126,6 +126,12 @@ img {
   .contacts__item:nth-child(-n + 1) {
     margin-bottom: 10px;
   }
+  .site-nav-link.mail {
+    display: flex;
+  }
+  .site-nav-link.number {
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -239,7 +245,6 @@ img {
 }
 
 .site-nav-link.mail {
-  display: flex;
   align-items: center;
   font-style: normal;
   color: var(--primary-texst-color);
@@ -250,7 +255,6 @@ img {
 }
 
 .site-nav-link.number {
-  display: flex;
   align-items: center;
   font-style: normal;
   color: var(--primary-text-color);
@@ -259,6 +263,14 @@ img {
 
 .site-nav-link.number:hover, .site-nav-link.number:focus {
   color: var(--accent-color);
+}
+
+.site-nav-link.mail {
+  display: inline-flex;
+}
+
+.site-nav-link.number {
+  display: inline-flex;
 }
 
 .contacts__item {
