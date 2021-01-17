@@ -837,6 +837,9 @@ html {
   .item:nth-child(-n+2) {
     margin-bottom: 30px;
   }
+  .section-title {
+    text-align: start;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -848,6 +851,9 @@ html {
   }
   .container .feature-item .item + .item {
     margin-left: 30;
+  }
+  .section-title {
+    text-align: start;
   }
 }
 
@@ -1071,7 +1077,7 @@ img {
     margin-bottom: 30px;
   }
   .line-button {
-    justify-content: center;
+    text-align: center;
   }
 }
 
