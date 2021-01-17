@@ -90,6 +90,8 @@ img{
 .position-portfolio{
     display: block;
     position: absolute;
+    align-content: center;
+   
     width: 100%;
     height: 100%;
     left: 0px;
@@ -97,10 +99,10 @@ img{
     align-items: center;
     opacity: 0;
 
-    // padding-left: 23px;
-    // padding-right: 23px;
-    // padding-top: 63px;
-    // padding-bottom: 63px;
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-top: 63px;
+    padding-bottom: 63px;
     
 
     font-style: normal;
@@ -139,16 +141,23 @@ img{
 } 
 
 @media screen and (min-width: 768px){
+    .flex-element:nth-child(-n + 2){
+        height: 440px;
+        
+    }
     .flex-element{
         width: 354px;
-        height: 440px;
         margin-bottom: 30px;
     }
-
     .line-button{
-       margin-left: auto;
-       margin-right: auto;
+        justify-content: center
     }
+    .portfolio-card{
+        width: 354px;
+        height: 294px;
+    }
+
+}
     
     @media screen and (min-width: 1200px){
         .container {
@@ -157,6 +166,11 @@ img{
             width: 1200px;
             border: none;
         }
+        .flex-element{
+            width: 370px;
+            height: 404px;
+            margin-bottom: 30px;
+        }
         
         .line-button__list{
             display: flex;
@@ -164,7 +178,11 @@ img{
             margin-top: 94px;
             margin-bottom: 50px;
         }
+        .portfolio-card{
+            width: 370px;
+            height: 294px
+        }
     }
 
-}
+
 /*=================  END PORTFOLIO============= */

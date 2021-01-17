@@ -49,12 +49,12 @@
 }
 
 
-@media screen and (max-width: 767px){
-    .item:not(:last-child) {
-        margin-bottom: 30px;
-    }
+.section-skills{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--primary-white-color);
 }
-    
+
 @media screen and (min-width: 768px){
     .item{
         width: 354px;
@@ -85,10 +85,4 @@
     .section-title{
         text-align: start;
     }
-}
-
-.section-skills{
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: var(--primary-white-color);
 }
