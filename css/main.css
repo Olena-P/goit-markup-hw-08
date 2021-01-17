@@ -181,6 +181,7 @@ img {
   padding: 0;
   border: none;
   justify-content: center;
+  background-color: #fff;
 }
 
 .menu-button .icon-cross {
@@ -920,7 +921,7 @@ html {
 .team-list-link {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .team-icon {
@@ -942,7 +943,6 @@ html {
   fill: var(--primary-white-color);
 }
 
-/*================= PORTFOLIO============= */
 .force-name {
   font-weight: 700;
   font-size: 18px;
@@ -980,7 +980,6 @@ img {
 
 .flex-element {
   width: 450px;
-  height: 404px;
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
 }
@@ -1068,9 +1067,6 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .flex-element:nth-child(-n + 2) {
-    height: 440px;
-  }
   .flex-element {
     width: 354px;
     margin-bottom: 30px;
@@ -1080,7 +1076,6 @@ img {
   }
   .portfolio-card {
     width: 354px;
-    height: 294px;
   }
 }
 
@@ -1108,7 +1103,6 @@ img {
   }
 }
 
-/*=================  END PORTFOLIO============= */
 .line-button {
   justify-content: start;
 }

@@ -129,11 +129,8 @@
      .contacts__item:nth-child(-n+1) {
     margin-bottom: 0;
     margin-right: 30px;
-    }
-    
+    } 
 }   
-
-
 
 .menu-button{
     display: inline-flex;
@@ -160,8 +157,6 @@
     display: none;
 }
 
-
-
 .site-nav{
     display: flex;
     align-items: center;
@@ -170,12 +165,6 @@
         outline: 1px solid transparent;
     }
 }
-    
-//     & .item + .item{
-//         //margin-left: 50px;
-//     }
-// }
-
 
 .header{
     position: relative;
@@ -189,8 +178,6 @@
         border: 1px solid #ECECEC;
     }
 }
-
-
 
 .site-nav-link{
     align-items: center;
@@ -215,7 +202,6 @@
         align-items: center;
         font-style: normal;
         color: var(--primary-texst-color);
-       
     }
     
     &.mail:hover,
@@ -251,12 +237,9 @@
     margin-right: 10px;
 }
 
-
 .current{
     color: var(--accent-color);
 }
-
-
 
 .mobile-menu{
     position: fixed;
@@ -281,6 +264,7 @@
         width: 70%;
     }
 } 
+
 .current::after{
     content:'';
     bottom: 0px;
@@ -292,5 +276,4 @@
     align-items: center;
     border-radius: 2px;
     background-color: var(--accent-color);
-
-   }
+}
