@@ -1,9 +1,6 @@
 .line-button{
-    //display: flex;
-    justify-content: center;
-    //margin-top: 94px;
-    //margin-bottom: 50px;
-} 
+    justify-content: start;
+}
 
 .button.primary.secondary{
     display: inline-block;
@@ -32,4 +29,23 @@
 .button.primary:focus{
     color: var(--primary-white-color);
     background-color: var(--accent-color);
+}
+
+
+@media screen and (min-width: 768px){
+    .line-button{
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+        margin-bottom: 30px;
+    } 
+}
+
+@media screen and (min-width: 1200px){
+    .line-button{
+        display: flex;
+        justify-content: center;
+        margin-top: 94px;
+        margin-bottom: 50px;
+    } 
 }

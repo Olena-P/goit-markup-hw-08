@@ -1077,11 +1077,12 @@ img {
     margin-bottom: 30px;
   }
   .line-button {
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (min-width: 1200px) {
   .container {
     margin-left: auto;
     margin-right: auto;
@@ -1098,7 +1099,7 @@ img {
 
 /*=================  END PORTFOLIO============= */
 .line-button {
-  justify-content: center;
+  justify-content: start;
 }
 
 .button.primary.secondary {
@@ -1124,6 +1125,24 @@ img {
 .button.primary:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .line-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .line-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 94px;
+    margin-bottom: 50px;
+  }
 }
 
 .is-hidden {
